@@ -96,9 +96,9 @@ return require("packer").startup(function(use)
     })
 
     use ({
-        'folke/neodev.nvim',
+        'folke/lazydev.nvim',
         config = function()
-            require('neodev').setup({})
+            require('lazydev').setup({})
         end,
     })
 
