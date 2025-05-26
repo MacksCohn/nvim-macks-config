@@ -27,7 +27,7 @@ local function openCustomTerminal()
     vim.cmd.term()
     vim.cmd.wincmd('J')
     local totalLines = vim.o.lines
-    vim.api.nvim_win_set_height(0, math.floor(totalLines * .30))
+    vim.api.nvim_win_set_height(0, math.floor(totalLines * .20))
     custom_terminal_bufnr = vim.api.nvim_get_current_buf()
     custom_terminal_winid = vim.api.nvim_get_current_win()
     vim.cmd('normal i')
