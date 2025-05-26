@@ -35,6 +35,12 @@ return require("packer").startup(function(use)
             vim.cmd("colorscheme everblush")
         end
     }
+    use ({
+        'vague2k/vague.nvim',
+        config = function()
+            require('vague').setup({})
+        end,
+    })
 
     use("mbbill/undotree")
     use("ThePrimeagen/harpoon")
