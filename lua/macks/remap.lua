@@ -5,4 +5,5 @@ vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
 vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.definition, {})
 
---vim.keymap.set()
+vim.keymap.set('n', '<C-u>', '<C-u>zz', {})
+vim.keymap.set('n', '<C-d>', '<C-d>zz', {})
