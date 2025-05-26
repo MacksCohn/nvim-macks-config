@@ -98,13 +98,13 @@ _G.packer_plugins = {
     url = "https://github.com/folke/lazydev.nvim"
   },
   ["mason-lspconfig"] = {
-    config = { "\27LJ\2\nO\0\1\5\2\3\0\b-\1\0\0008\1\0\0019\1\0\0015\3\1\0-\4\1\0=\4\2\3B\1\2\1K\0\1\0\1À\2À\17capabilities\1\0\1\17capabilities\0\nsetupÍ\1\1\0\b\0\t\0\0206\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0026\2\0\0'\4\3\0B\2\2\0029\2\4\2B\2\1\0029\3\5\0005\5\6\0004\6\3\0003\a\a\0>\a\1\6=\6\b\5B\3\2\0012\0\0€K\0\1\0\rhandlers\0\1\0\2\rhandlers\0\27automatic_installation\2\nsetup\25get_lsp_capabilities\14blink.cmp\14lspconfig\20mason-lspconfig\frequire\0" },
+    config = { "\27LJ\2\nO\0\1\5\2\3\0\b-\1\0\0008\1\0\0019\1\0\0015\3\1\0-\4\1\0=\4\2\3B\1\2\1K\0\1\0\1À\2À\17capabilities\1\0\1\17capabilities\0\nsetupÍ\1\1\0\b\0\t\0\0206\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0026\2\0\0'\4\3\0B\2\2\0029\2\4\2B\2\1\0029\3\5\0005\5\6\0004\6\3\0003\a\a\0>\a\1\6=\6\b\5B\3\2\0012\0\0€K\0\1\0\rhandlers\0\1\0\2\27automatic_installation\2\rhandlers\0\nsetup\25get_lsp_capabilities\14blink.cmp\14lspconfig\20mason-lspconfig\frequire\0" },
     loaded = true,
     path = "/home/macks/.local/share/nvim/site/pack/packer/start/mason-lspconfig",
     url = "https://github.com/williamboman/mason-lspconfig"
   },
   ["mason.nvim"] = {
-    config = { "\27LJ\2\n¦\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\aui\1\0\1\aui\0\nicons\1\0\1\nicons\0\1\0\3\22package_installed\bâœ“\24package_uninstalled\bâœ—\20package_pending\bâžœ\nsetup\nmason\frequire\0" },
+    config = { "\27LJ\2\n¦\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\aui\1\0\1\aui\0\nicons\1\0\1\nicons\0\1\0\3\24package_uninstalled\bâœ—\22package_installed\bâœ“\20package_pending\bâžœ\nsetup\nmason\frequire\0" },
     loaded = true,
     path = "/home/macks/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
@@ -155,14 +155,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-try_loadstring("\27LJ\2\nF\0\0\3\0\4\0\0066\0\0\0009\0\1\0009\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\17virtual_text\2\vconfig\15diagnostic\bvim\0", "config", "nvim-lspconfig")
-time([[Config for nvim-lspconfig]], false)
--- Config for: lazydev.nvim
-time([[Config for lazydev.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flazydev\frequire\0", "config", "lazydev.nvim")
-time([[Config for lazydev.nvim]], false)
+-- Config for: mason.nvim
+time([[Config for mason.nvim]], true)
+try_loadstring("\27LJ\2\n¦\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\aui\1\0\1\aui\0\nicons\1\0\1\nicons\0\1\0\3\24package_uninstalled\bâœ—\22package_installed\bâœ“\20package_pending\bâžœ\nsetup\nmason\frequire\0", "config", "mason.nvim")
+time([[Config for mason.nvim]], false)
+-- Config for: telescope-ui-select.nvim
+time([[Config for telescope-ui-select.nvim]], true)
+try_loadstring("\27LJ\2\nä\1\0\0\b\0\n\1\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\5\0004\4\3\0006\5\0\0'\a\3\0B\5\2\0029\5\4\0054\a\0\0B\5\2\0?\5\0\0=\4\6\3=\3\b\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\t\0'\2\6\0B\0\2\1K\0\1\0\19load_extension\15extensions\1\0\1\15extensions\0\14ui-select\1\0\1\14ui-select\0\17get_dropdown\21telescope.themes\nsetup\14telescope\frequire\3€€À™\4\0", "config", "telescope-ui-select.nvim")
+time([[Config for telescope-ui-select.nvim]], false)
 -- Config for: everblush
 time([[Config for everblush]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme everblush\bcmd\bvim\0", "config", "everblush")
@@ -171,21 +171,21 @@ time([[Config for everblush]], false)
 time([[Config for vague.nvim]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\nvague\frequire\0", "config", "vague.nvim")
 time([[Config for vague.nvim]], false)
--- Config for: telescope-ui-select.nvim
-time([[Config for telescope-ui-select.nvim]], true)
-try_loadstring("\27LJ\2\nä\1\0\0\b\0\n\1\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\5\0004\4\3\0006\5\0\0'\a\3\0B\5\2\0029\5\4\0054\a\0\0B\5\2\0?\5\0\0=\4\6\3=\3\b\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\t\0'\2\6\0B\0\2\1K\0\1\0\19load_extension\15extensions\1\0\1\15extensions\0\14ui-select\1\0\1\14ui-select\0\17get_dropdown\21telescope.themes\nsetup\14telescope\frequire\3€€À™\4\0", "config", "telescope-ui-select.nvim")
-time([[Config for telescope-ui-select.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+try_loadstring("\27LJ\2\nF\0\0\3\0\4\0\0066\0\0\0009\0\1\0009\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\17virtual_text\2\vconfig\15diagnostic\bvim\0", "config", "nvim-lspconfig")
+time([[Config for nvim-lspconfig]], false)
+-- Config for: lazydev.nvim
+time([[Config for lazydev.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flazydev\frequire\0", "config", "lazydev.nvim")
+time([[Config for lazydev.nvim]], false)
 -- Config for: blink.cmp
 time([[Config for blink.cmp]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14blink.cmp\frequire\0", "config", "blink.cmp")
 time([[Config for blink.cmp]], false)
--- Config for: mason.nvim
-time([[Config for mason.nvim]], true)
-try_loadstring("\27LJ\2\n¦\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\aui\1\0\1\aui\0\nicons\1\0\1\nicons\0\1\0\3\22package_installed\bâœ“\24package_uninstalled\bâœ—\20package_pending\bâžœ\nsetup\nmason\frequire\0", "config", "mason.nvim")
-time([[Config for mason.nvim]], false)
 -- Config for: mason-lspconfig
 time([[Config for mason-lspconfig]], true)
-try_loadstring("\27LJ\2\nO\0\1\5\2\3\0\b-\1\0\0008\1\0\0019\1\0\0015\3\1\0-\4\1\0=\4\2\3B\1\2\1K\0\1\0\1À\2À\17capabilities\1\0\1\17capabilities\0\nsetupÍ\1\1\0\b\0\t\0\0206\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0026\2\0\0'\4\3\0B\2\2\0029\2\4\2B\2\1\0029\3\5\0005\5\6\0004\6\3\0003\a\a\0>\a\1\6=\6\b\5B\3\2\0012\0\0€K\0\1\0\rhandlers\0\1\0\2\rhandlers\0\27automatic_installation\2\nsetup\25get_lsp_capabilities\14blink.cmp\14lspconfig\20mason-lspconfig\frequire\0", "config", "mason-lspconfig")
+try_loadstring("\27LJ\2\nO\0\1\5\2\3\0\b-\1\0\0008\1\0\0019\1\0\0015\3\1\0-\4\1\0=\4\2\3B\1\2\1K\0\1\0\1À\2À\17capabilities\1\0\1\17capabilities\0\nsetupÍ\1\1\0\b\0\t\0\0206\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0026\2\0\0'\4\3\0B\2\2\0029\2\4\2B\2\1\0029\3\5\0005\5\6\0004\6\3\0003\a\a\0>\a\1\6=\6\b\5B\3\2\0012\0\0€K\0\1\0\rhandlers\0\1\0\2\27automatic_installation\2\rhandlers\0\nsetup\25get_lsp_capabilities\14blink.cmp\14lspconfig\20mason-lspconfig\frequire\0", "config", "mason-lspconfig")
 time([[Config for mason-lspconfig]], false)
 
 _G._packer.inside_compile = false
