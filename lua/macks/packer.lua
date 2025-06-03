@@ -28,13 +28,6 @@ return require("packer").startup(function(use)
         }
     }
 
-    use {
-        "Everblush/nvim",
-        as = "everblush",
-        config = function()
-            vim.cmd("colorscheme everblush")
-        end
-    }
     use ({
         'vague2k/vague.nvim',
         config = function()
@@ -106,6 +99,10 @@ return require("packer").startup(function(use)
         config = function()
             require('lazydev').setup({})
         end,
+    })
+
+    use ({
+        'OmniSharp/omnisharp-vim',
     })
 
     use ({

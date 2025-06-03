@@ -68,6 +68,5 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 -- special paste to void
 vim.keymap.set('x', '<leader>p', '"_dP')
 
-
 vim.keymap.set({'n','v'}, '<C-c>', '"+y')
 vim.keymap.set({'n','v'}, '<C-v>', '"+p')
