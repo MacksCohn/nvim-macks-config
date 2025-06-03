@@ -6,7 +6,6 @@ return require("packer").startup(function(use)
     -- Packer can manage itself
     use "wbthomason/packer.nvim"
 
-
     use {
         "nvim-telescope/telescope.nvim", tag = '0.1.8',
         -- or                            , branch = "0.1.x",
@@ -85,6 +84,21 @@ return require("packer").startup(function(use)
             mason.setup({
                 automatic_installation = true,
                 handlers = {
+                    ['omnisharp-mono'] = function()
+                        lspconfig.omnisharp_mono.setup({
+                            cmd = {
+                                '~/.local/share/nvim/mason/packages/omnisharp-mono/run',
+                                '--languageserver',
+                                '--hostPID',
+                                tostring(vim.fn.getpid()),
+                            },
+                            capabilities = capabilities,
+                            settings = {
+                                useModernNet = false,
+                            },
+                            filetypes = { 'cs' },
+                        })
+                    end,
                     function(server_name)
                         lspconfig[server_name].setup({
                             capabilities = capabilities
@@ -101,10 +115,6 @@ return require("packer").startup(function(use)
             ---@diagnostic disable-next-line: missing-fields
             require('lazydev').setup({})
         end,
-    })
-
-    use ({
-        'OmniSharp/omnisharp-vim',
     })
 
     use ({
