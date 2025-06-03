@@ -81,6 +81,7 @@ return require("packer").startup(function(use)
             local mason = require('mason-lspconfig')
             local lspconfig = require('lspconfig')
             local capabilities = require('blink.cmp').get_lsp_capabilities()
+            ---@diagnostic disable-next-line: missing-fields
             mason.setup({
                 automatic_installation = true,
                 handlers = {
@@ -97,6 +98,7 @@ return require("packer").startup(function(use)
     use ({
         'folke/lazydev.nvim',
         config = function()
+            ---@diagnostic disable-next-line: missing-fields
             require('lazydev').setup({})
         end,
     })
