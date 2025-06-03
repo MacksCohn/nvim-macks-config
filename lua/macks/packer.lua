@@ -69,9 +69,10 @@ return require("packer").startup(function(use)
             })
         end,
     })
+
     use({
         'williamboman/mason-lspconfig',
-        requires = {
+        dependencies = {
             'williamboman/mason.nvim',
             'neovim/nvim-lspconfig',
             'saghen/blink.cmp',
@@ -82,29 +83,14 @@ return require("packer").startup(function(use)
             local capabilities = require('blink.cmp').get_lsp_capabilities()
             ---@diagnostic disable-next-line: missing-fields
             mason.setup({
-                automatic_installation = true,
+                automatic_installation = false,
                 handlers = {
-                    ['omnisharp-mono'] = function()
-                        lspconfig.omnisharp_mono.setup({
-                            cmd = {
-                                '~/.local/share/nvim/mason/packages/omnisharp-mono/run',
-                                '--languageserver',
-                                '--hostPID',
-                                tostring(vim.fn.getpid()),
-                            },
-                            capabilities = capabilities,
-                            settings = {
-                                useModernNet = false,
-                            },
-                            filetypes = { 'cs' },
-                        })
-                    end,
                     function(server_name)
                         lspconfig[server_name].setup({
                             capabilities = capabilities
                         })
                     end,
-                }
+                },
             })
         end,
     })
