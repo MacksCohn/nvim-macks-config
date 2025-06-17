@@ -29,7 +29,7 @@ require("lazy").setup({
     }
 })
 
-vim.lsp.set_log_level("debug")
+vim.lsp.set_log_level("info")
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -46,4 +46,3 @@ vim.opt.wrap = false
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-

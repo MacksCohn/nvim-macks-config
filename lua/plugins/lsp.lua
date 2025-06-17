@@ -1,6 +1,6 @@
 return {
     {
-        'williamboman/mason.nvim',
+       'williamboman/mason.nvim',
         config = function()
             ---@diagnostic disable-next-line: missing-fields
             require('mason').setup({
@@ -34,6 +34,7 @@ return {
 
     {
         'williamboman/mason-lspconfig',
+        lazy = false,
         dependencies = {
             { 'mason.nvim', opts = {} },
             'nvim-lspconfig',
@@ -41,25 +42,20 @@ return {
         },
         config = function()
             local mason = require('mason-lspconfig')
-            local lspconfig = require('lspconfig')
             local capabilities = require('blink.cmp').get_lsp_capabilities()
             ---@diagnostic disable-next-line: missing-fields
             mason.setup({
-                automatic_installation = false,
-                handlers = {
-                    function(server_name)
-                        lspconfig[server_name].setup({
-                            capabilities = capabilities
-                        })
-                    end,
-                    ['omnisharp'] = function()
-                        lspconfig.omnisharp.setup({
-                            capabilities = capabilities,
-
-                        })
-                    end,
-                },
+                automatic_installation = true,
             })
+            vim.lsp.config['omnisharp'] = {
+                capabilities = capabilities,
+                root_markers = {'.git', 'Assets', '*.sln', '*.csproj'},
+            }
         end,
-    }
+    },
+    {
+        -- for loading progress for lsps
+        'j-hui/fidget.nvim',
+        opts = {}
+    },
 }
