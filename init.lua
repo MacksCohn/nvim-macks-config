@@ -47,4 +47,4 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 
-vim.cmd('colorscheme carbonfox')
+vim.cmd('colorscheme duskfox')
