@@ -5,3 +5,4 @@ sudo tar xzvf nvim-linux-x86_64.tar.gz -C /opt/nvim
 sudo ln -s /opt/nvim/nvim-linux-x86_64/bin/nvim /usr/bin/nvim
 rm nvim-linux-x86_64.tar.gz
 cp -r nvim ~/.config
+cp -r ./custom_lsps ~/
