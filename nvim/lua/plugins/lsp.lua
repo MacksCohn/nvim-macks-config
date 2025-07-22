@@ -30,6 +30,7 @@ return {
                 virtual_text = true
             })
             local lspconfig = require('lspconfig')
+            local capabilities = require('blink.cmp').get_lsp_capabilities()
             lspconfig.gdscript.setup({
                 cmd = {
                     'node',
@@ -37,6 +38,17 @@ return {
                     '--host',
                     '192.168.1.177',
                 },
+            })
+            lspconfig.pylsp.setup({
+                capabilities=capabilities,
+                settings = {
+                    pylsp = {
+                        plugins={
+                            pyflakes={enabled=true},
+                            pylint={enabled=false},
+                        }
+                    }
+                }
             })
         end,
     },
