@@ -46,6 +46,7 @@ return {
                         plugins={
                             pyflakes={enabled=true},
                             pylint={enabled=false},
+                            pycodestyle={enable=false},
                         }
                     }
                 }
