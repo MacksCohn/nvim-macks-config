@@ -29,28 +29,6 @@ return {
             vim.diagnostic.config({
                 virtual_text = true
             })
-            local lspconfig = require('lspconfig')
-            local capabilities = require('blink.cmp').get_lsp_capabilities()
-            lspconfig.gdscript.setup({
-                cmd = {
-                    'node',
-                    '/home/macks/custom_lsps/godot-wsl-lsp-1.3.1/bin/godot-wsl-lsp',
-                    '--host',
-                    '192.168.1.177',
-                },
-            })
-            lspconfig.pylsp.setup({
-                capabilities=capabilities,
-                settings = {
-                    pylsp = {
-                        plugins={
-                            pyflakes={enabled=true},
-                            pylint={enabled=false},
-                            pycodestyle={enable=false},
-                        }
-                    }
-                }
-            })
         end,
     },
 
