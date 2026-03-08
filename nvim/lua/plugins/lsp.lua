@@ -51,6 +51,12 @@ return {
                 capabilities = capabilities,
                 root_markers = {'.git', 'Assets', '*.sln', '*.csproj'},
             }
+            vim.lsp.config['gdscript']= {
+                capabilities = capabilities,
+                cmd = vim.lsp.rpc.connect('127.0.0.1', 6005),
+                filetypes = { 'gd', 'gdscript', 'gdscript3' },
+            }
+            vim.lsp.enable('gdscript')
         end,
     },
     {
