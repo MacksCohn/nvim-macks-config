@@ -21,5 +21,9 @@ return {
             '-view=none', -- Ensures no automatic viewer opening
         },
     }
+    vim.g.vimtex_quickfix_ignore_filters = {
+        'Overfull \\\\hbox',
+        'Underfull \\\\hbox',
+    }
   end
 }
